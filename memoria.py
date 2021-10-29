@@ -68,10 +68,10 @@ def draw():
         x, y = xy(mark)
         up()
         # Central el dígito en el cuadro
-        goto(x + 2, y)
+        goto(x + 25.5, y + 5)
         color('black')
         # Para cetrar se utiliza también align
-        write(tiles[mark], font=('Arial', 30, 'normal'))
+        write(tiles[mark], align="center", font=('Arial', 30, 'normal'))
 
     # para desplegar el total de Taps final
     if not any(hide):
